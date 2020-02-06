@@ -25,9 +25,13 @@ public class permutaciones
                     {
                         System.out.println("La cardinalidad de las permutaciones no puede ser mayor a la cardinalidad del conjunto");
                     }
-                    else if (perm <= 0)
+                    else if (perm < 0)
                     {
                         System.out.println("Ingresar números mayores a 0");
+                    }
+                    else if (perm == 0)
+                    {
+                    	System.out.println("1");
                     }
                     else
                     {
