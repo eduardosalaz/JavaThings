@@ -5,7 +5,7 @@ import java.io.File;
 
 public class fileChooser
 {
-    //DeclaraciÛn de Variables
+    //Declaraci√≥n de Variables
 
     JButton ok = new JButton();
     JFileChooser explorador = new JFileChooser();
@@ -21,7 +21,7 @@ public class fileChooser
         }
         catch(Exception e)
         {
-            System.out.println("Seleccionar una ruta v·lida");
+            System.out.println("Seleccionar una ruta v√°lida");
         }
 
 
@@ -32,17 +32,17 @@ public class fileChooser
         explorador.setCurrentDirectory(new File("./")); //Establecer ruta actual
         explorador.setDialogTitle("Explorador de archivos");
         explorador.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY); //Aceptar solo carpetas como entrada
-        explorador.setAcceptAllFileFilterUsed(false); //Denegar la opciÛn de Todos los tipos de archivo
+        explorador.setAcceptAllFileFilterUsed(false); //Denegar la opci√≥n de Todos los tipos de archivo
 
-        if (explorador.showOpenDialog(ok) == JFileChooser.APPROVE_OPTION) //Seleccionar una carpeta v·lida
+        if (explorador.showOpenDialog(ok) == JFileChooser.APPROVE_OPTION) //Seleccionar una carpeta v√°lida
         {
             ruta = new File(explorador.getSelectedFile().getAbsolutePath());
-            System.out.println("Se seleccionÛ el directorio ubicado en: " + ruta);
+            System.out.println("Se seleccion√≥ el directorio ubicado en: " + ruta);
 
         }
         else
         {
-            System.out.println("No se seleccionÛ un directorio v·lido");
+            System.out.println("No se seleccion√≥ un directorio v√°lido");
         }
 
     }
